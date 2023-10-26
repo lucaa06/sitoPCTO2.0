@@ -1,0 +1,245 @@
+
+body,html{
+  /*animazione sfondo*/
+  animation: coloriSfondo 7s infinite;
+
+    /* anti copiatura */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+     
+}
+
+/*colori sfondo*/
+
+@keyframes coloriSfondo {
+  0% {
+    background-color: rgb(48, 91, 131);
+  }
+  25%{    background-color: #487197;
+  }
+
+  50% {
+      background-color: #34618b;
+    }
+  70%{
+      background-color: #487197;
+    }
+  100%{
+      background-color: rgb(48, 91, 131);
+    }
+}
+/*zona titolo*/
+.titolo{
+  text-align: center;
+  object-position: 50%;
+  width:auto;
+  height: auto;
+}
+
+span{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 250px;
+  position: sticky;
+  text-align: center;
+  object-position: 50%;
+  color: rgb(0, 0, 0);
+  width: 50px,auto;
+  size: 50px;
+  text-transform: uppercase;
+  transition: 700ms ease;
+  animation: transformazioneY 2s ease 0s 1s ease;
+
+}
+span:hover{
+  letter-spacing: 5px;
+}
+@keyframes transformazioneY {
+  0% {
+      transform: translateY(0px);
+      animation-timing-function:ease-out
+  }
+  100% {
+      transform: translateY()(-200px);
+      animation-timing-function:ease-in-out
+  }
+}
+/*div*/
+.layout {
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  
+}
+
+.divisore { 
+  flex-grow: 1; 
+  border: 2px double black;
+  text-align: center;
+  width: 500px;
+  height: 650px;
+  border-radius: 70px;
+  background-color: #1f3a53;
+  transition: 1.3s ease;
+  display: flex;
+  flex-direction: column;
+  font-variant-caps: all-small-caps;
+
+
+  .titoloDiv{
+    color:black;
+    font-size: 100px;
+    allign-items:center;
+    justify-content: space-around;
+    transition: 1s ease;
+
+  }
+
+  .paragrafoDiv{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    word-wrap: break-word;
+    transition: 500ms ease;
+    margin:20px;
+    
+  }
+  .bottone{
+    border-style: solid;
+    border-bottom: black 2px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 1s ease;
+    margin: 10px;
+    background-color:#2f577d;
+    box-shadow: 6px black;
+    align-items: end;
+    allign-items:end;
+    justify-self: self-end;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(71, 70, 70, 0.2));
+  }
+}
+.divisore:hover{
+  background-color: #2a4e6f;
+.titoloDiv{
+  color:black;
+  font-size: 65px;
+  allign-items:start;
+  justify-content: space-around;
+ letter-spacing: 20px;
+}
+.paragrafoDiv{
+  font-size: 37px;
+  color:rgb(255, 255, 255);
+  word-wrap: break-word;
+
+}
+.bottone{
+  border-bottom: black 1px;
+  box-shadow: 0 0 0 4px #ffffff;
+  border-radius: 20px;
+  font-size: 60px;
+  cursor:pointer;
+}
+.bottone:hover{
+
+  border-bottom: black 2px;
+  box-shadow: 0 0 0 4px #000000;
+  border-radius: 20px;
+  font-size: 60px;
+  cursor:pointer;
+  background-color: #7190ae;
+  color: white;
+}
+
+}
+/* zona di fondo */
+footer{
+  position: end;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1f3a53;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  allign-items:center;
+  justify-content: space-around;
+  transition: 1s ease;
+  flex-grow: 1; 
+  border-radius: 20px;
+
+  .nomi{
+    margin-top: 20px;
+    font-size: 50px;
+    columns: 5;
+    transition: 1s ease;
+    flex-grow: 1; 
+  }
+  .altroCrediti{
+    font-size: 20px;
+    color: #487197;
+    transition: 1s ease;
+    opacity: 0;
+    flex-grow: 1; 
+    word-wrap: break-word;
+  }
+  b{
+    font-size: 70px;
+    color: white;
+    transition: 1s ease;
+  }
+}
+table, th, td {
+  width:100%
+}
+footer:hover{
+  position: end;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#152738;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  allign-items:center;
+  justify-content: space-around;
+  transition: 0.5s ease;
+
+
+  .nomi{
+    margin-top: 20px;
+    font-size: 40px;
+    columns: 5;
+   
+  }
+  .altroCrediti{
+    font-size: 20px;
+    color: #9ab0c5;
+    opacity: 1;
+  }
+  .titoloCrediti{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 20px;
+    transition: 500ms ease;
+  }
+}
+
+.spazio{
+  width: 300px;
+  height:300px;
+}

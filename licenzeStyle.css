@@ -1,0 +1,153 @@
+
+body,html{
+    /*animazione sfondo*/
+    animation: coloriSfondo 7s infinite;
+        
+    /* anti copiatura */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141E30;
+
+    color: rgb(0, 0, 0);
+    
+}
+/*colori sfondo*/
+
+@keyframes coloriSfondo {
+    0% {
+        background:#5a3f87;;
+
+    }/*background:#24243e;*/
+    25%{    background:#7251b5; }
+
+    
+  
+    50% {
+        background:#6247aa; }
+
+      
+    70%{
+        background:#7251b5; }
+
+      
+    100%{
+        background:#5a3f87; }
+
+      
+  }
+/* ITOLO */
+h1 {
+    position: relative;
+    font-size: 10em;
+    letter-spacing:10px;
+    font-family: sans-serif;
+    display:table;
+    margin:40px auto;
+    cursor:pointer;
+    transition:.6s;
+  }
+  h1:before,
+  h1:after {
+    content:attr(data-text);
+    transition:.6s;
+  }
+  h1:before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index:-1;
+    text-shadow:
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px;
+     
+    -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+            mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+  }
+  h1:hover {
+    transform:translate(-10px,-10px);
+  }  
+  h1:hover:before {
+    text-shadow:
+     1px 1px,
+     2px 2px,
+     3px 3px,
+     4px 4px,
+     5px 5px,
+     6px 6px,
+     7px 7px,
+     8px 8px,
+     9px 9px,
+     10px 10px;
+  }
+  /* PARAGRAFI */
+  .p1{
+    columns: 2 ;
+    font-size: 40px;
+    font-family: sans-serif;
+    word-wrap:normal;
+    text-align: justify;
+    margin: 50px;
+    
+  }
+  .p2{
+    font-size: 40px;
+    padding:35px;
+    font-family: sans-serif;
+    word-wrap:normal;
+    text-align: justify;
+  }
+  .immagine{
+    display:block;
+    width: 900px;
+    height: 500;
+    border-radius:10px;
+    margin: 10px;
+    text-align: center;
+    image-orientation: center;
+    
+  }
+  table{
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-right: 1px white;
+    margin:30px
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color:rgb(159, 159, 159)
+}
+.titoloP{
+    display:table;
+    margin:40px auto;
+    font-size: 50px;
+}
+
+.homebutton {
+    margin:20px;
+    width: 100px;
+    top: 10px;
+    padding-right: 20px;
+    position: absolute;
+}
+	
+.homebutton a:hover {
+    border-color: #000000;
+    color: #000000;
+    text-decoration: none;
+}
