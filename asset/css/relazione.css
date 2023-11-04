@@ -1,0 +1,193 @@
+
+body,html{
+    /*animazione sfondo*/
+    animation: coloriSfondo 7s infinite;
+        
+    /* anti copiatura */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141E30;
+
+    color: rgb(212, 212, 212);
+    
+}
+
+/*colori sfondo*/
+
+@keyframes coloriSfondo {
+    0% {
+        background:#002a12;
+
+    }/*background:#24243e;*/
+    25%{    background:#003014; }
+
+    
+  
+    50% {
+        background:#003516; }
+
+      
+    70%{
+        background:#003e1a; }
+
+      
+    100%{
+        background:#002a12; }
+
+      
+  }
+.p1{
+    columns: 2 ;
+    font-size: 30px;
+    font-family: sans-serif;
+    word-wrap:normal;
+    text-align: justify;
+    margin: 50px;
+    
+  }
+  .p2{
+    font-size: 30px;
+    padding:35px;
+    font-family: sans-serif;
+    word-wrap:normal;
+    text-align: justify;
+  }
+  .p3{
+    font-size: 30px;
+    padding:35px;
+    font-family: sans-serif;
+    word-wrap:normal;
+    text-align: justify;
+    color: rgb(201, 202, 202);
+  }
+  .immagine{
+    display:block;
+    width: 900px;
+    height: 500;
+    border-radius:10px;
+    margin: 10px;
+    text-align: center;
+    image-orientation: center;
+    
+  }
+
+  /* HOME */
+  .homebutton {
+    margin:20px;
+    width: 100px;
+    top: 10px;
+    padding-right: 20px;
+    position: absolute;
+}
+	
+.homebutton a:hover {
+    border-color: #000000;
+    color: #000000;
+    text-decoration: none;
+}
+
+.titolo{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color:#ffffff;
+    text-shadow: 0 20px 40px rgba(0,0,0,.5);
+    font-size: 200px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+.titolo:hover{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color:#ffffff;
+    text-shadow: 0 20px 40px rgba(0,0,0,.5);
+    font-size: 200px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(191, 197, 5);
+}
+footer{
+    position: end;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #003e1a;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    allign-items:center;
+    justify-content: space-around;
+    transition: 1s ease;
+    flex-grow: 1; 
+    border-radius: 20px;
+  
+    .nomi{
+      margin-top: 20px;
+      font-size: 50px;
+      columns: 5;
+      transition: 1s ease;
+      flex-grow: 1; 
+    }
+  }
+  
+  footer:hover{
+    position: end;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#005f28;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    allign-items:center;
+    justify-content: space-around;
+    transition: 0.5s ease;
+  
+  
+    .nomi{
+      margin-top: 20px;
+      font-size: 40px;
+      columns: 5;
+     
+    }
+    +
+    .titoloCrediti{
+      font-size: 70px;
+      color: white;
+      letter-spacing: 20px;
+      transition: 500ms ease;
+    }
+  }
+  
+  .spazio{
+    width: 300px;
+    height:300px;
+  }
+  
