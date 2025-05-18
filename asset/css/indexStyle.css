@@ -1,0 +1,30 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth !important;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/liguria-bg.jpg') center/cover no-repeat;
+}
+
+.logo-partner {
+  max-height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo-partner:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
